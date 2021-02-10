@@ -1,0 +1,98 @@
+body {
+    
+     display: flex;
+     flex-direction: column;
+     font-family: sans-serif;
+     margin: 0;
+    overflow: hidden;
+    display: flex;
+    
+}
+
+
+
+
+.h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    
+
+
+}
+
+#pokedex {
+    
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 5px;
+    padding-inline-start: 0;
+    display: flex;
+    align-content: center;
+   
+}
+
+.card {
+    list-style: none;
+    padding: 20px;
+    background-color: white;
+    color: red;
+    text-align: center;
+    border-radius: 3rem;
+    padding: 2rem;
+    box-shadow: 4px 4px 15px 15px (black);
+    transition: 0.2s;
+    width: 180px;
+    align-content: bottom;
+    display: flex;
+    
+   
+    
+}
+.card:not(:first-child){
+    margin-left: var(-1rem);
+}
+
+
+.card:hover,
+.card:focus-within {
+    transform: translateY(-2rem);
+    
+}
+.card:hover ~  .card {
+     transform: translateX(-2rem);  
+    background: black;
+    
+    }
+
+
+.card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 19px;
+    font-weight: normal;
+    font-family: 'Syne Mono'; 
+    font-weight: bolder;
+}
+.card-subtitle {
+    margin-top: 5px;
+    color:black;
+    font-weight: bolder;
+    font-family: 'Big Shoulders Display','Medium'; 
+    font-size: 25px;
+}
+
+.card-image {
+    height: 210px;
+}
+
+.pokemon{
+    position: absolute;
+    margin: auto;
+    top: 70px;
+    bottom: 0;
+    left: 220px;
+    right: 0;
+    word-wrap: normal;
+    
+}
+
